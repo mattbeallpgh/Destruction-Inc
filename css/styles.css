@@ -1,0 +1,77 @@
+/* Universal Styles */
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(241, 241, 241);
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    background-color:  rgb(58, 58, 58);
+    z-index: 100;
+    width: 100%;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.topLogo {
+    color:  rgb(241, 241, 241);
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;    
+}
+
+header ul {
+    display: flex;
+
+}
+
+header a {
+    color:  rgb(241, 241, 241);
+    font-size: .75rem;
+}
+
+header li {
+    padding-left: 2rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+        display: none;
+    }
+
+    .topLogo {
+        color:  rgb(241, 241, 241);
+        font-size: 1rem;
+        font-weight: bold;
+        flex: 1;    
+    }
+    
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .mobile a {
+        color:  rgb(241, 241, 241);
+        font-size: .75rem;      
+    }
+ 
+.container {
+    display: flex;
+    color:rgb(58, 58, 58);
+}
+
+
+}
